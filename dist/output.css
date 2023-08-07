@@ -598,6 +598,10 @@ video {
   margin-left: auto;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -619,6 +623,14 @@ video {
   height: 100vh;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
 .w-\[210px\] {
   width: 210px;
 }
@@ -631,8 +643,18 @@ video {
   align-items: center;
 }
 
-.gap-0 {
-  gap: 0px;
+.justify-center {
+  justify-content: center;
+}
+
+.justify-items-stretch {
+  justify-items: stretch;
+}
+
+.space-y-0 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0px * var(--tw-space-y-reverse));
 }
 
 .border-b {
@@ -649,36 +671,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-hero-pattern {
-  background-image: linear-gradient(to right bottom, rgba('#ffffff',0.5), rgba('#9eb9ce',0.5)), url('img_foot.png');
-}
-
-.bg-\[url\(https\:\/\/placekitten\.com\/1400\)\] {
-  background-image: url(https://placekitten.com/1400);
-}
-
-.bg-\[url\(\'img_foot\.png\'\)\] {
-  background-image: url('img_foot.png');
-}
-
-.bg-\[url\(\'\/src\/img_foot\.png\'\)\] {
-  background-image: url('/src/img_foot.png');
-}
-
-.bg-\[url\(\'\.\/src\/img_foot\.png\'\)\] {
-  background-image: url('./src/img_foot.png');
-}
-
-.bg-\[url\(\'file\:\/\/\/home\/otter\/vitocom_old\/src\/img_foot\.png\'\)\] {
-  background-image: url('file:///home/otter/vitocom_old/src/img_foot.png');
+.bg-\[url\(\'http\:\/\/vitocom\.ru\/t\/v448\/images\/images\/img_foot\.png\?1565246875204\'\)\] {
+  background-image: url('http://vitocom.ru/t/v448/images/images/img_foot.png?1565246875204');
 }
 
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'https\:\/\/vidra\.github\.io\/vitocom_old\/src\/img_foot\.png\'\)\] {
-  background-image: url('https://vidra.github.io/vitocom_old/src/img_foot.png');
 }
 
 .from-white {
@@ -697,10 +695,6 @@ video {
 
 .bg-left-bottom {
   background-position: left bottom;
-}
-
-.bg-bottom {
-  background-position: bottom;
 }
 
 .bg-no-repeat {
@@ -726,9 +720,9 @@ video {
   padding-right: 1rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .py-2 {
@@ -746,13 +740,27 @@ video {
   padding-bottom: 1.75rem;
 }
 
-.py-14 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pl-20 {
   padding-left: 5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-center {
@@ -785,6 +793,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
 }
 
 .text-\[\#003567\] {
@@ -838,12 +850,6 @@ video {
 
   .md\:inline-flex {
     display: inline-flex;
-  }
-
-  .md\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
